@@ -1,0 +1,35 @@
+{
+  "name": "eventsource-stream",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "~1.4.2",
+    "event-stream": "~3.0.4",
+    "emit-stream": "~0.1.0"
+  },
+  "dependencies": {
+    "response-stream": "0.0.0"
+  },
+  "description": "Takes a [stream of javascript events](https://github.com/substack/emit-stream) and pushes them to the browser as server-sent events.",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:timoxley/eventsource-stream.git"
+  },
+  "keywords": [
+    "eventsource",
+    "sse",
+    "server",
+    "sent",
+    "events",
+    "streams"
+  ],
+  "author": "Tim Oxley"
+}

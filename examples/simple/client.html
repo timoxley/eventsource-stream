@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Server Sent Events</title>
+    <style>
+      body {
+        width: 400px;
+        overflow-x: hidden;
+        margin: 0 auto;
+      }
+
+      img {
+        margin:5px;
+        border:2px solid black;
+        vertical-align:middle;
+        width:75px;
+        height:75px;
+      }
+    </style>
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script type="text/javascript">
+      var source = new EventSource('/data')
+      source.addEventListener('ping', function(event) {
+        var text = document.createTextNode('ping!' + event.data)
+        var p = document.createElement('p')
+        p.appendChild(text)
+        document.body.appendChild(p)
+      })
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+
